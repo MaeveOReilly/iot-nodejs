@@ -86,7 +86,7 @@ export default class BaseClient extends events.EventEmitter {
       if(isNode() && !this.enforceWs) { 
         this.host = "ssl://" + config.org + ".messaging." + this.domainName + ":8883"; 
       } else {
-        this.host = "wss://" + config.org + ".messaging." + this.domainName + ":8883";
+        this.host = "wss://" + config.org + ".messaging." + this.domainName + ":443";
       }
 
       this.isQuickstart = false;
